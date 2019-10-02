@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
 data "template_file" "api-shell-script" {
   template = "${file("scripts/user-data-api.sh")}"
   vars {

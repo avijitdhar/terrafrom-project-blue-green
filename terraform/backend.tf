@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "terraforms-remote-state-bucket"
-    key = "node-aws-jenkins-terraform.tfstate"
-    region = "us-east-1"
+    key = "state-file-app"
+    region = "us-west-2"
   }
 }
