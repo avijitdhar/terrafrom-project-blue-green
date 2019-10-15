@@ -25,7 +25,7 @@ resource "aws_autoscaling_group" "web-autoscaling" {
 
   vpc_zone_identifier  = ["${aws_subnet.main-public-1.id}"]
   launch_configuration = "${aws_launch_configuration.web-launchconfig.name}"
-  min_size             = 2
+  min_size             = 1
   max_size             = 2
   health_check_grace_period = 300
   health_check_type = "ELB"
